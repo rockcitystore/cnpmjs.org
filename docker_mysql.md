@@ -33,6 +33,7 @@ FLUSH PRIVILEGES;
 ####为cnpm创建数据库（容器内）
 ```
 create database cnpmDB;
+//为cnpm用户设置数据库访问权限
 grant all privileges on cnpmDB.* to cnpm@localhost identified by '2Sxo*eXeAI^C5EOrDQSpSQ70*eqOMJ$2';
 flush privileges;
 ```
