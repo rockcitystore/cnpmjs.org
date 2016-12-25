@@ -78,7 +78,7 @@ module.exports = {
     admins: {
       admin: 'a16120119@10.24.47.136',
     },
-    syncModel: 'all'// 'none', 'all', 'exist'
+    syncModel: 'exist'// 'none', 'all', 'exist'
     }; 
 
 ```
