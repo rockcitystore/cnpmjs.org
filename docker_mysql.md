@@ -4,7 +4,8 @@
 * 教程：[https://github.com/cnpm/cnpmjs.org/wiki/Deploy](https://github.com/cnpm/cnpmjs.org/wiki/Deploy)
 * 相关路径:
 ```
- ~/.cnpmjs.org/   //下载目录？
+ ~/.cnpmjs.org/download   //临时下载目录
+ ~/.cnpmjs.org/nfs   //存储目录
 ```
 
 <br>
