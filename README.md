@@ -1,7 +1,8 @@
 [toc]
 
 #npm私有仓库
-* 教程：[https://github.com/cnpm/cnpmjs.org/wiki/Deploy](https://github.com/cnpm/cnpmjs.org/wiki/Deploy)
+* 教程：[https://github.com/cnpm/cnpmjs.org/wiki/Deploy](https://github.com/cnpm/cnpmjs.org/wiki/Deploy),
+[http://blog.fens.me/nodejs-cnpm-npm/](http://blog.fens.me/nodejs-cnpm-npm/)
 * 相关路径:
 ```
  ~/.cnpmjs.org/download   //临时下载目录
