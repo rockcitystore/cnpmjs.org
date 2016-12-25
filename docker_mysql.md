@@ -42,7 +42,7 @@ git pull https://github.com/rockcitystore/cnpmjs.org.git
 ```
 ####安装私有仓库
 ```
-npm install 
+npm install --registry=https://registry.npm.taobao.org
 make test
 ```
 
