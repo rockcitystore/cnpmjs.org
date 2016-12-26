@@ -27,10 +27,12 @@ var config = {
 
   registryPort: 7001,
   webPort: 7002,
-  bindingHost: '127.0.0.1', // only binding on 127.0.0.1 for local access
+  /*
+  从日志中看到，这两个端口服务都绑定在127.0.0.1的本地网络中，我们需要修改配置文件 ./config/index.js文件，注释bindingHost一行，对外网开放。 */
+  //bindingHost: '127.0.0.1', // only binding on 127.0.0.1 for local access
 
   // debug mode
-  // if in debug mode, some middleware like limit wont load
+  // if in debug mode, some middleware like limit wont loadß
   // logger module will print to stdout
   debug: process.env.NODE_ENV === 'development',
   // page mode, enable on development env
@@ -85,7 +87,7 @@ var config = {
   adBanner: '',
   customReadmeFile: '', // you can use your custom readme file instead the cnpm one
   customFooter: '', // you can add copyright and site total script html here
-  npmClientName: 'cnpm', // use `${name} install package`
+  npmClientName: 'lnpm', // use `${name} install package`
   packagePageContributorSearch: true, // package page contributor link to search, default is true
 
   // max handle number of package.json `dependencies` property
@@ -98,13 +100,13 @@ var config = {
    */
 
   database: {
-    db: 'cnpmjs_test',
-    username: 'root',
-    password: '',
+    db: 'cnpmDB',
+    username: 'cnpm',
+    password: '2Sxo*eXeAI^C5EOrDQSpSQ70*eqOMJ$2',
 
     // the sql dialect of the database
     // - currently supported: 'mysql', 'sqlite', 'postgres', 'mariadb'
-    dialect: 'sqlite',
+    dialect: 'mysql',
 
     // custom host; default: 127.0.0.1
     host: '127.0.0.1',
@@ -135,7 +137,7 @@ var config = {
   downloadRedirectToNFS: false,
 
   // registry url name
-  registryHost: 'r.cnpmjs.org',
+  registryHost: '10.24.47.136:7001',
 
   /**
    * registry mode config
@@ -162,8 +164,8 @@ var config = {
   // cnpm wont directly sync from this one
   // but sometimes will request it for some package infomations
   // please don't change it if not necessary
-  officialNpmRegistry: 'https://registry.npmjs.com',
-  officialNpmReplicate: 'https://replicate.npmjs.com',
+  officialNpmRegistry: 'https://registry.npm.taobao.org',
+  officialNpmReplicate: 'https://registry.npm.taobao.org',
 
   // sync source, upstream registry
   // If you want to directly sync from official npm's registry
@@ -200,7 +202,7 @@ var config = {
 
   // changes streaming sync
   syncChangesStream: false,
-  handleSyncRegistry: 'http://127.0.0.1:7001',
+  handleSyncRegistry: 'http://10.24.47.136:7001',
 
   // badge subject on http://shields.io/
   badgePrefixURL: 'https://img.shields.io/badge',
